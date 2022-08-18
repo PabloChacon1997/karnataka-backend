@@ -14,18 +14,26 @@ public class REP_VENTA_DETAL_COL_PRUE_VW {
 	@Column
 	private Long VEN_CANTIDAD_SUGERIDA;
 	
-	@Column
-	private String CON_LEAD_ORIGEN;
+	@Column(name = "CON_SEGMENTACION")
+	private String conSegmentacion;
+	
+	@Column(name = "CON_PLATAFORMA")
+	private String conPlataforma;
+	
+	@Column(name = "CON_NOM_EMPRESA")
+	private String conNomEmpresa;
+	
+	@Column(name = "CON_NOM_ALMACEN")
+	private String conNomAlmacen;
 	
 	@Column
-	private String CON_PLATAFORMA;
+	private String CON_NOM_CIUDAD_ALMACEN;
 	
-	@Column
-	private String CON_NOM_EMPRESA;
+	@Column(name = "CON_NOM_ESTADO_COMPLO_FACT")
+	private String conNomEstadoComploFact;
 	
-	@Column
-	private String CON_NOM_ALMACEN;
-	
+	@Column(name = "VEN_COD_EST_COMPLETO")
+	private String venCodEstCompleto;
 	
 	public REP_VENTA_DETAL_COL_PRUE_VW() {}
 
@@ -45,36 +53,61 @@ public class REP_VENTA_DETAL_COL_PRUE_VW {
 		VEN_CANTIDAD_SUGERIDA = vEN_CANTIDAD_SUGERIDA;
 	}
 
-	public String getCON_LEAD_ORIGEN() {
-		return CON_LEAD_ORIGEN;
+	public String getConSegmentacion() {
+		return conSegmentacion;
+	}
+	
+	public void setConSegmentacion(String conSegmentacion) {
+		this.conSegmentacion = conSegmentacion;
+	}
+	
+	
+	public String getConPlataforma() {
+		return conPlataforma;
+	}
+	
+	public void setConPlataforma(String conPlataforma) {
+		this.conPlataforma = conPlataforma;
 	}
 
-	public void setCON_LEAD_ORIGEN(String cON_LEAD_ORIGEN) {
-		CON_LEAD_ORIGEN = cON_LEAD_ORIGEN;
+	public void setConNomEmpresa(String conNomEmpresa) {
+		this.conNomEmpresa = conNomEmpresa;
+	}
+	
+	public String getConNomEmpresa() {
+		return conNomEmpresa;
 	}
 
-	public String getCON_PLATAFORMA() {
-		return CON_PLATAFORMA;
+	public String getConNomAlmacen() {
+		return conNomAlmacen;
+	}
+	
+	public void setConNomAlmacen(String conNomAlmacen) {
+		this.conNomAlmacen = conNomAlmacen;
 	}
 
-	public void setCON_PLATAFORMA(String cON_PLATAFORMA) {
-		CON_PLATAFORMA = cON_PLATAFORMA;
+	public String getCON_NOM_CIUDAD_ALMACEN() {
+		return CON_NOM_CIUDAD_ALMACEN;
 	}
 
-	public String getCON_NOM_EMPRESA() {
-		return CON_NOM_EMPRESA;
+	public void setCON_NOM_CIUDAD_ALMACEN(String cON_NOM_CIUDAD_ALMACEN) {
+		CON_NOM_CIUDAD_ALMACEN = cON_NOM_CIUDAD_ALMACEN;
 	}
 
-	public void setCON_NOM_EMPRESA(String cON_NOM_EMPRESA) {
-		CON_NOM_EMPRESA = cON_NOM_EMPRESA;
+	public String getConNomEstadoComploFact() {
+		return conNomEstadoComploFact;
 	}
 
-	public String getCON_NOM_ALMACEN() {
-		return CON_NOM_ALMACEN;
+	public void setConNomEstadoComploFact(String conNomEstadoComploFact) {
+		this.conNomEstadoComploFact = conNomEstadoComploFact;
 	}
 
-	public void setCON_NOM_ALMACEN(String cON_NOM_ALMACEN) {
-		CON_NOM_ALMACEN = cON_NOM_ALMACEN;
+	public String getVenCodEstCompleto() {
+		return venCodEstCompleto;
+	}
+
+	public void setVenCodEstCompleto(String venCodEstCompleto) {
+		this.venCodEstCompleto = venCodEstCompleto;
 	}
 
 	
